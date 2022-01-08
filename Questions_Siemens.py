@@ -63,7 +63,7 @@ calculate the smallest different and why you would select one method over anothe
                 # and using the non-negative difference between array1 & array2, 
                 # then the next two lines instead should be
                 # test = element1 - element2
-                # if test > 0 and test < minimum
+                # if test > 0 and test < minimum:
                 test = abs(element1 - element2)
                 if test < minimum:
                     element1_result = element1
@@ -117,7 +117,7 @@ calculate the smallest different and why you would select one method over anothe
             # and using the non-negative difference between array1 & array2, 
             # then the next two lines should instead be
             # test = element1 - element2
-            # if test > 0 and test < minimum
+            # if test > 0 and test < minimum:
             test = abs(element1 - element2)
             if test < minimum:
                 element1_result = element1
