@@ -38,6 +38,16 @@ calculate the smallest different and why you would select one method over anothe
 
         return False
 
+    """
+        Check every element in array1 against every element in array2
+        The check does a subtraction and then takes the absolute value of that
+        Return the smallest result of the check and the two numbers involved
+        
+        NOTE: There is some ambiguity as to what is meant by "smallest non-negative difference".
+        It is assumed that this means the absolute value of the differences.
+        Another interpretation is shown on line 65 and line 66 below
+
+    """
     def runStupidBruteForce(self):
         if self.fails_edge_test():
             return None
@@ -62,6 +72,24 @@ calculate the smallest different and why you would select one method over anothe
 
         return [element1_result, element2_result, minimum]
 
+    
+    """
+        Sort array1 and array2
+        In an element by element comparison in ascending order compare
+        the element from one array with the element of the other array
+        There are two indices which point to the location in the sorted arrays
+        from which the comparisons are being made.
+        Insure the that pointers point to roughly the same values in both arrays
+        as closely as possible.
+        Check the difference between the compared elements and remember
+        the smallest difference.
+        Return that smallest difference and the numbers that were used to
+        find that difference.
+
+        NOTE: There is some ambiguity as to what is meant by "smallest non-negative difference".
+        It is assumed that this means the absolute value of the differences.
+        Another interpretation is shown on line 119 and line 120 below
+    """
     def runSortedDifference(self):
         if self.fails_edge_test():
             return None
